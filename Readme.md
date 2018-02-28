@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ruslan Muradov](https://up.htmlacademy.ru/htmlcss/20/user/422621).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
