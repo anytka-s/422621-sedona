@@ -63,8 +63,10 @@
     <fieldset class="living-price">
         <legend>Стоимость в сутки (Р):</legend>
         <p class="living-type-list">
-            <input id="filter-price-max" class="price-min" type="number" placeholder="ОТ 0" aria-label="Цена от">
-            <input id="filter-price-min" class="price-max" type="number" placeholder="ДО 3000"  aria-label="Цена до">
+            <label for="filter-price-max" class="visually-hidden">От</label>
+            <input id="filter-price-max" class="price-min" type="number" aria-label="Цена от">
+            <label for="filter-price-min" class="visually-hidden">До</label>
+            <input id="filter-price-min" class="price-max" type="number" aria-label="Цена до">
         </p>
         <p>
             <label class="visually-hidden" for="filter-price-range">Установить стоимость от и до</label>
@@ -73,6 +75,7 @@
             <button class="filter-price-range-button" type="button">Верхний порог цены</button>
         </p>
     </fieldset>
+
     </section>
 
     <section class="search-sort-items">
