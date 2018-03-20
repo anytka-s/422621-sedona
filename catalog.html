@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона. Поиск</title>
 </head>
 
@@ -16,7 +19,7 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта Штата</a></li>
-            <li><a>Гостиницы</a></li>
+            <li>Гостиницы</li>
         </ul>
     </nav>
 </header>
@@ -26,6 +29,7 @@
 
     <section class="catalog-filter">
     <h2 class="visually-hidden">Условия проживания в отеле</h2>
+
     <fieldset class="living-conditions">
         <legend>Инфаструктура:</legend>
         <ul class="living-conditions-list">
@@ -64,9 +68,9 @@
         <legend>Стоимость в сутки (Р):</legend>
         <p class="living-type-list">
             <label for="filter-price-max" class="visually-hidden">От</label>
-            <input id="filter-price-max" class="price-min" type="number" aria-label="Цена от">
+            <input id="filter-price-max" class="price-input min" type="number" aria-label="Цена от">
             <label for="filter-price-min" class="visually-hidden">До</label>
-            <input id="filter-price-min" class="price-max" type="number" aria-label="Цена до">
+            <input id="filter-price-min" class="price-input max" type="number" aria-label="Цена до">
         </p>
         <p>
             <label class="visually-hidden" for="filter-price-range">Установить стоимость от и до</label>
@@ -74,14 +78,15 @@
             <button class="filter-price-range-button" type="button">Нижний порог цены</button>
             <button class="filter-price-range-button" type="button">Верхний порог цены</button>
         </p>
+        <button type="button" class="living-conditions-button">Показать</button>
     </fieldset>
 
     </section>
 
     <section class="search-sort-items">
-            <p>Найденно: 3</p>
-            <p>Сортировка:</p>
+            <p class="search-count">Найденно: 3</p>
             <ul class="sort-list">
+                <li>Сортировка:</li>
                 <li class="sort-item"><a href="#">По цене</a></li>
                 <li class="sort-item"><a href="#">По типу</a></li>
                 <li class="sort-item"><a href="#">По рейтингу</a></li>
@@ -92,7 +97,6 @@
 
     <section class="search-catalog">
         <ul class="search-result">
-
             <li class="searched-hotel">
                 <img class="hotel-img" src="img/content/amara-resort-and-spa.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
                 <h3>Amara Resort & Spa</h3>
@@ -102,7 +106,6 @@
                 <a class="order-hotel" href="#">Забранировать</a>
                 <div class="rating">
                     <ul class="rating-list">
-
                         <li class="active"></li>
                         <li class="active"></li>
                         <li class="active"></li>
@@ -153,7 +156,7 @@
         <p class="footer-hashtag">#VISITSEDONA</p>
 
         <div class="footer-social">
-            <ul>
+            <ul class="social-list">
                 <li><a class="social-button" href="#">Twitter</a></li>
                 <li><a class="social-button" href="#">Facebook</a></li>
                 <li><a class="social-button" href="#">YouTube</a></li>

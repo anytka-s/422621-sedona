@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -21,20 +24,20 @@
       </nav>
   </header>
 
+  <div class="title-section">
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <img src="img/background/sedona-photo.jpg" width="1200" height="510" alt="Промо картинка">
+  </div>
   <main class="container">
-      <h1 class="visually-hidden">Седона — небольшой городок в Аризоне,
+      <h1 class="main-slogan">Седона — небольшой городок в Аризоне,<br>
       заслуживающий большего!</h1>
-      <p>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <p class="reasons">Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <section class="features">
 
-        <div class="title-section">
-          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <img src="img/background/sedona-photo.jpg" width="1200" height="510" alt="Промо картинка">
-        </div>
 
               <div class="features-first-reason">
                   <h2 class="reason-title">Настоящий городок</h2>
-                  <p class="reason-number">№1</p>
+                  <p class="reason-number">— №1 —</p>
                   <p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
                   <img src="img/content/city-image.jpg" alt="Фото города">
               </div>
@@ -56,7 +59,7 @@
 
           <div class="features-second-reason">
               <h2 class="reason-title">Там есть Мост Дьявола</h2>
-              <p class="reason-number">№2</p>
+              <p class="reason-number">— №2 —</p>
               <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               <img src="img/content/devil-bridge.jpg" alt="Мост дьявола">
           </div>
@@ -64,14 +67,17 @@
           <ul class="features-second-list">
               <li class="features-item">
                   <h3>Небольшая площадь</h3>
+                  <p class="reason-number">— №3 —</p>
                   <p>Все достопримечательности находятся очень близко</p>
               </li>
               <li class="features-item">
                   <h3>Красивая дорога</h3>
+                  <p class="reason-number">— №4 —</p>
                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="features-item">
                   <h3>Мало туристов</h3>
+                  <p class="reason-number">— №5 —</p>
                   <p>Большинство едет в Гранд Каньон и толпится там</p>
               </li>
           </ul>
@@ -97,23 +103,22 @@
                   </p>
                   <p>
                       <label for="adults">Взрослые:</label>
-                      <button type="button" name="search-form-people remove">-</button>
+                      <button class="change-count-btn" type="button" name="search-form-people remove">-</button>
                       <input id="adults" type="number" name="adults" value="2" required>
-                      <button type="button" name="search-form-people add">+</button>
+                      <button class="change-count-btn" type="button" name="search-form-people add">+</button>
                   </p>
                   <p>
                       <label for="kids">Дети:</label>
-                      <button type="button" name="search-form-people remove">-</button>
+                      <button class="change-count-btn" type="button" name="search-form-people remove">-</button>
                       <input id="kids" type="number" name="kids" value="0" required>
-                      <button type="button" name="search-form-people add">+</button>
+                      <button class="change-count-btn" type="button" name="search-form-people add">+</button>
                   </p>
                   <button type="submit" class="modal-search button">НАЙТИ</button>
               </form>
           </section>
 
           <div>
-              <!--<img src="img/background/map.png" width="150" height="100" alt="Карта">-->
-              <!--место для карты-->
+              <img src="img/background/map.png" width="1718" height="748" alt="Карта">
           </div>
       </div>
   </main>
@@ -122,10 +127,10 @@
           <p class="footer-hashtag">#VISITSEDONA</p>
 
       <div class="footer-social">
-          <ul>
-              <li><a aria-label="Твиттер" class="social-button" href="#">Twitter</a></li>
-              <li><a aria-label="Фейсбук" class="social-button" href="#">Facebook</a></li>
-              <li><a aria-label="Ютюб" class="social-button" href="#">YouTube</a></li>
+          <ul class="social-list">
+              <li><a class="social-button" href="#">Twitter</a></li>
+              <li><a class="social-button" href="#">Facebook</a></li>
+              <li><a class="social-button" href="#">YouTube</a></li>
           </ul>
       </div>
 
