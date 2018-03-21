@@ -5,10 +5,10 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-    color: rgba(0, 0, 0, 1);
+    color: #000000;
     text-align: center;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FFFFFF;
 }
 
 a,
@@ -18,23 +18,43 @@ a,
     color: #81b3d2;
 }
 
-h1, h2, h3 {
-    font-weight: bold;
+.main-slogan,
+.features-item  {
+    font-size: 21px;
 }
 
+.features-reason-title,
+.reason-title {
+    font-size: 18px;
+}
+
+.offer-title {
+    font-size: 23px;
+}
+
+.features-reason-description,
+.reason-description,
+.reason-number,
+.offer-description,
+.hotel-type,
+.hotel-price {
+    font-size: 12px;
+}
+
+
 .site-navigation {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FFFFFF;
     list-style: none;
 }
 
 .site-navigation a,
 .features-item .reason-number{
-    color: rgba(0, 0, 0, 1);
+    color: #000000;
 }
 
 .features-first-reason,
 .features-second-reason {
-    background-color: rgba(129, 179, 210, 1);
+    background-color: #81B3D2;
 }
 
 .features-item,
@@ -49,18 +69,18 @@ h1, h2, h3 {
 
 .features-first-reason h2,
 .features-first-reason p {
-    color: white;
+    color: #ffffff;
 }
 
 .reason-number,
 .reason-description,
 .reason-title,
 .modal-search h2{
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
 }
 
 .features-second-list {
-    background-color: rgba(238, 238, 238, 1);
+    background-color: #EEEEEE;
 }
 
 .modal-search .button {
@@ -69,23 +89,24 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-weight: bold;
     border: none;
-    background-color: rgba(129, 179, 210, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: #81B3D2;
+    color: #FFFFFF;
 }
 
-.modal.modal-search h2 {
-    background-color: rgba(118, 99, 87, 1);
+.modal-search h2 {
+    background-color: #766357;
 }
 
 .modal-search.form input {
-    background-color: rgba(242, 242, 242, 1);
+    background-color: #F2F2F2;
+    text-transform: uppercase;
 }
 
 .footer-hashtag {
     text-decoration: none;
     font-size: 21px;
     font-weight: bold;
-    color: rgba(0, 0, 0, 1);
+    color: #000000;
 }
 
 .modal-search form,
@@ -98,8 +119,8 @@ h1, h2, h3 {
 }
 
 .change-count-btn {
-color: rgba(169,169,169,1);
-background-color: rgba(242,242,242,1);
+color: #A9A9A9;
+background-color: #F2F2F2;
 }
 
 fieldset {
@@ -109,15 +130,15 @@ fieldset {
 .catalog-filter {
     background-image: url("../img/background/filter_background.jpg");
     background-repeat: no-repeat;
-    background-color: rgba(129, 179, 210, 1);
-    color: rgba(242,242,242,1);
+    background-color: #81B3D2;
+    color: #F2F2F2;
     background-size: cover;
 }
 
 .price-input {
     background-color: transparent;
-    color: rgba(242,242,242,1);
-    width: calc(322px/2) ;
+    color: #F2F2F2;
+    width: 161px;
     height: 40px;
 }
 
@@ -125,65 +146,70 @@ fieldset {
     background-color: transparent;
     width: 141px;
     height: 40px;
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
     text-transform: inherit;
 }
 
 legend {
     font-size: 16px;
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
     font-weight: bold;
     line-height: 1.313;
     height: 13px;
 }
 .search-sort-items a {
-    color: rgba(0,0,0,1);
-    border-bottom: 1px dashed rgba(129, 179, 210, 1);
+    color: #000000;
+    border-bottom: 1px dashed #81B3D2;
 }
 .search-count {
     font-size: 21px;
     font-weight: bold;
     line-height: 1.238;
-    color: rgba(0,0,0,1);
+    color: #000000;
 }
 
 .sort-item a:hover,
 .sort-item a:active,
 .sort-item a:focus {
-    color: rgba(129, 179, 210, 1);
+    color: #81B3D2;
     border-bottom: none;
 }
-.searched-hotel {
-    border-top: 1px solid rgba(229, 229, 229, 1);
-    border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+.search-sort-items .sort-list {
+    font-size: 10px;
 }
 
-.searched-hotel h3 {
-    font-size: 21px;
+.searched-hotel {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hotel-title {
+    font-size: 16px;
     font-weight: bold;
     line-height: 1.238;
     height: 16px;
 }
 
 .about-hotel {
-    background-color: rgba(129, 179, 210, 1);
+    background-color: #81b3d2;
     width: 110px;
     height: 27px;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
 }
 
 .order-hotel {
-    background-color: rgba(118, 99, 87, 1);
+    background-color: #766357;
     width: 142px;
     height: 27px;
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
 }
 
 .searched-hotel p {
-    background-color: rgba(242, 242, 242,1);
+    background-color: #F2F2F2;
     width: 110px;
     height: 27px;
 }
-li .active {
-    background-color: rgba(129, 179, 210,1);
+.rating-list .active {
+    background-color: #81B3D2;
 }
+
