@@ -8,7 +8,7 @@ body {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 a,
@@ -43,7 +43,7 @@ a,
 
 
 .site-navigation {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     list-style: none;
 }
 
@@ -54,7 +54,7 @@ a,
 
 .features-first-reason,
 .features-second-reason {
-    background-color: #81B3D2;
+    background-color: #81b3d2;
 }
 
 .features-item,
@@ -76,11 +76,11 @@ a,
 .reason-description,
 .reason-title,
 .modal-search h2{
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .features-second-list {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
 }
 
 .modal-search .button {
@@ -89,8 +89,8 @@ a,
     text-transform: uppercase;
     font-weight: bold;
     border: none;
-    background-color: #81B3D2;
-    color: #FFFFFF;
+    background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .modal-search h2 {
@@ -98,7 +98,7 @@ a,
 }
 
 .modal-search.form input {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     text-transform: uppercase;
 }
 
@@ -119,8 +119,8 @@ a,
 }
 
 .change-count-btn {
-color: #A9A9A9;
-background-color: #F2F2F2;
+color: #a9a9a9;
+background-color: #f2f2f2;
 }
 
 fieldset {
@@ -130,14 +130,14 @@ fieldset {
 .catalog-filter {
     background-image: url("../img/background/filter_background.jpg");
     background-repeat: no-repeat;
-    background-color: #81B3D2;
-    color: #F2F2F2;
+    background-color: #81b3d2;
+    color: #f2f2f2;
     background-size: cover;
 }
 
 .price-input {
     background-color: transparent;
-    color: #F2F2F2;
+    color: #f2f2f2;
     width: 161px;
     height: 40px;
 }
@@ -146,20 +146,20 @@ fieldset {
     background-color: transparent;
     width: 141px;
     height: 40px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: inherit;
 }
 
-legend {
+.fieldset-legend {
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: bold;
     line-height: 1.313;
     height: 13px;
 }
 .search-sort-items a {
     color: #000000;
-    border-bottom: 1px dashed #81B3D2;
+    border-bottom: 1px dashed #81b3d2;
 }
 .search-count {
     font-size: 21px;
@@ -171,7 +171,7 @@ legend {
 .sort-item a:hover,
 .sort-item a:active,
 .sort-item a:focus {
-    color: #81B3D2;
+    color: #81b3d2;
     border-bottom: none;
 }
 
@@ -201,15 +201,14 @@ legend {
     background-color: #766357;
     width: 142px;
     height: 27px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .searched-hotel p {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     width: 110px;
     height: 27px;
 }
 .rating-list .active {
-    background-color: #81B3D2;
+    background-color: #81b3d2;
 }
-
