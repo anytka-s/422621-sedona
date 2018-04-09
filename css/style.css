@@ -9,6 +9,12 @@ body {
     text-align: center;
     text-transform: uppercase;
     background-color: #ffffff;
+    min-width: 1200px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 a,
@@ -21,6 +27,10 @@ a,
 .main-slogan,
 .features-item {
     font-size: 21px;
+}
+
+.features-item {
+    width: 400px;
 }
 
 .features-reason-title,
@@ -261,6 +271,12 @@ fieldset {
 .order-hotel {
     background-color: #766357;
     color: #ffffff;
+}
+
+.hotel-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .rating-count {
