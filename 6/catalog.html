@@ -11,7 +11,7 @@
 
 <body>
 
-<header>
+<header class="container ">
     <nav class="main-navigation">
         <a href="index.html" class="main-header-logo" aria-label="Логотип">
             <img src="img/sedona-logo.png" width="138" height="70" alt="Логотип">
@@ -25,7 +25,7 @@
     </nav>
 </header>
 
-<main>
+<main class="container">
     <h1 class="visual-hidden">Отели в Седоне</h1>
 
     <section class="catalog-filter">
@@ -114,7 +114,9 @@
                                 <a class="about-hotel hotel-link" href="#">Подробнее</a>
                                 <a class="order-hotel hotel-link" href="#">Забронировать</a>
                             </div>
-                            <span class="rating-count">Рейтинг: 8.5</span>
+                            <div class="hotel-rating">
+                                <span class="rating-count">Рейтинг: 8.5</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,7 +146,9 @@
                                 <a class="about-hotel hotel-link" href="#">Подробнее</a>
                                 <a class="order-hotel hotel-link" href="#">Забронировать</a>
                             </div>
-                            <span class="rating-count">Рейтинг: 8.9</span>
+                            <div class="hotel-rating">
+                                <span class="rating-count">Рейтинг: 8.9</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,7 +176,9 @@
                                 <a class="about-hotel hotel-link" href="#">Подробнее</a>
                                 <a class="order-hotel hotel-link" href="#">Забранировать</a>
                             </div>
-                            <span class="rating-count">Рейтинг: 9.2</span>
+                            <div class="hotel-rating">
+                                <span class="rating-count">Рейтинг: 9.2</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,26 +193,25 @@
 
     </section>
 
-    <footer class="main-footer">
-        <p class="footer-hashtag">#VISITSEDONA</p>
-
-        <div class="footer-social">
-            <ul class="social-list">
-                <li><a class="social-button" href="#">Twitter</a></li>
-                <li><a class="social-button" href="#">Facebook</a></li>
-                <li><a class="social-button" href="#">YouTube</a></li>
-            </ul>
-        </div>
-
-        <p class="footer-copyright">
-            <b>WEBSITE BY</b>
-            <a aria-label="Интенсив в HTMLacademy" class="footer-copyright-link"
-               href="https://htmlacademy.ru/intensive/htmlcss">
-            </a>
-        </p>
-    </footer>
-
 </main>
 
+<footer class="main-footer container">
+    <p class="footer-hashtag">#VISITSEDONA</p>
+
+    <div class="footer-social">
+        <ul class="social-list">
+            <li><a class="social-button" href="#">Twitter</a></li>
+            <li><a class="social-button" href="#">Facebook</a></li>
+            <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+    </div>
+
+    <p class="footer-copyright">
+        <b>WEBSITE BY</b>
+        <a aria-label="Интенсив в HTMLacademy" class="footer-copyright-link"
+           href="https://htmlacademy.ru/intensive/htmlcss">
+        </a>
+    </p>
+</footer>
 </body>
 </html>
