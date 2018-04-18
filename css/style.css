@@ -23,6 +23,7 @@ img {
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 10px 10px 10px #ededed;
+    position: relative;
 }
 
 a,
@@ -55,13 +56,34 @@ a,
     margin-bottom: 0;
 }
 
+.reason-title {
+    position: relative;
+    top: 25px;
+    line-height: 25px;
+}
+
+.reason-number-long {
+    position: relative;
+    top: 5px;
+}
+
 .features-reason-title,
 .reason-title {
     font-size: 21px;
 }
 
+.features-second-list .second,
+.features-reason-description .second,
+.reason-number.second
+{
+    position: relative;
+    bottom: 40px;
+}
+
 .offer-title {
-    font-size: 23px;
+    font-size: 30px;
+    padding-top: 32px;
+    margin-bottom: 27px;
 }
 
 .features-reason-description,
@@ -94,6 +116,16 @@ a,
     z-index: 3;
 }
 
+.main-photo {
+    margin-bottom: 35px;
+}
+
+.main-reasons {
+    position: relative;
+    top: 15px;
+    margin-bottom: 67px;
+}
+
 .site-navigation a,
 .features-item .reason-number {
     color: #000000;
@@ -116,6 +148,7 @@ a,
     margin: auto;
     padding: 0;
     justify-content: center;
+    margin-bottom: 12px;
 }
 
 .features-first-reason,
@@ -164,14 +197,12 @@ a,
 
 .features-first-reason,
 .features-second-reason {
-    /*flex-grow: 1;*/
     color: #ffffff;
 }
 
 .features-second-reason {
     justify-content: flex-start;
     flex-direction: row-reverse;
-    /*flex-grow: 10;*/
 }
 
 .reason-number,
@@ -182,6 +213,7 @@ a,
 
 .features-second-list {
     background-color: #eeeeee;
+    height: 255px;
 }
 
 .modal-search .button {
