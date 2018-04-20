@@ -238,15 +238,6 @@ a,
     background: url(../img/checkbox-on.svg) no-repeat;
 }
 
-input[type="checkbox"]:checked:disabled+label{
-    background: url(../img/checkbox-on.svg) no-repeat red;
-    color: black;
-}
-
-.living-conditions-list li:nth-child(3) .checkbox + .custom-checkbox{
-    color: red;
-}
-
 .living-type-list {
     padding-left: 33px;
 }
@@ -756,10 +747,6 @@ fieldset {
     margin-right: 12px;
 }
 
-/*.price-controls .min-price {*/
-    /*margin-left: 0;*/
-/*}*/
-
 .price-controls input {
     width: 50px;
     margin: 0;
@@ -888,17 +875,15 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
-.searched-hotel:nth-child(2) .hotel-price.item{
+.searched-hotel:nth-child(2) .hotel-price.item {
     margin-left: 24px;
     margin-top: -2px;
 }
 
-.searched-hotel:nth-child(3) .hotel-price.item{
+.searched-hotel:nth-child(3) .hotel-price.item {
     margin-left: -18px;
     margin-top: -2px;
 }
-
-
 
 .star-raiting {
     margin-bottom: 99px;
@@ -950,6 +935,7 @@ input[type="radio"].visually-hidden {
     right: 4px;
     margin-left: -25px;
 }
+
 .footer-copyright-catalog b {
     position: relative;
     bottom: 16px;
