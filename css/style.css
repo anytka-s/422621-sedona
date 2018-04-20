@@ -208,6 +208,103 @@ a,
 .hotel-links {
     list-style: none;
 }
+
+.living-conditions,
+.living-type {
+    margin-top: 30px;
+}
+
+.living-conditions {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 313px;
+    padding-left: 73px;
+}
+
+.checkbox + .custom-checkbox {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 27px;
+    margin: 0;
+    vertical-align: middle;
+    background: url(../img/checkbox-off.svg) no-repeat;
+    position: relative;
+    left: 0;
+}
+
+.checkbox:checked + .custom-checkbox {
+    background: url(../img/checkbox-on.svg) no-repeat;
+}
+
+input[type="checkbox"]:checked:disabled+label{
+    background: url(../img/checkbox-on.svg) no-repeat red;
+    color: black;
+}
+
+.living-conditions-list li:nth-child(3) .checkbox + .custom-checkbox{
+    color: red;
+}
+
+.living-type-list {
+    padding-left: 33px;
+}
+
+.living-type-list li:first-child > label {
+    position: relative;
+    right: 7px;
+}
+
+.living-type-list li:nth-child(2) > label {
+    position: relative;
+    right: 21px;
+}
+
+.living-conditions-list {
+    position: relative;
+    bottom: 15px;
+    right: 43px;
+}
+
+.living-type {
+    position: relative;
+    right: 31px;
+    bottom: 16px;
+}
+
+.living-conditions-list li:nth-child(1) .living-conditions-name {
+    position: relative;
+    right: 19px;
+}
+
+.living-conditions-list li:nth-child(2) .living-conditions-name {
+    position: relative;
+    right: 14px;
+}
+
+.living-conditions-list li:nth-child(3) .living-conditions-name {
+    position: relative;
+    right: 32px;
+}
+
+.filter-point {
+    margin-bottom: 18px;
+    width: 140px;
+}
+
+.filter-name {
+    width: 100px;
+}
+
+.living-type {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 488px;
+    padding-left: 4px;
+}
+
 .footer-hashtag-wrapper {
     width: 300px;
 }
@@ -225,11 +322,31 @@ a,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 35px;
-    margin-bottom: 27px;
+    margin-right: 36px;
+    margin-bottom: 25px;
+}
+
+.social-list-catalog {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 12px;
+    margin-bottom: 12px;
 }
 
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.social-button-catalog {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,12 +434,22 @@ a,
     margin-top: -121px;
 }
 
+.footer-hashtag-catalog {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 21px;
+    margin-left: 47px;
+}
+
 .footer-hashtag {
     text-decoration: none;
     font-size: 21px;
     font-weight: bold;
     color: #000000;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
+    margin-left: 0;
 }
 
 .modal-search form,
@@ -358,6 +485,8 @@ fieldset {
     background-color: #81b3d2;
     color: #f2f2f2;
     background-size: cover;
+    display: flex;
+    height: 217px;
 }
 
 .living-conditions-button {
@@ -371,9 +500,19 @@ fieldset {
 .fieldset-legend {
     font-size: 16px;
     color: #ffffff;
-    font-weight: bold;
     line-height: 1.313;
     height: 13px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
+    right: 14px;
+}
+
+.living-type .fieldset-legend {
+    padding-right: 267px;
+    position: relative;
+    top: 13px;
+    right: 27px;
 }
 
 .search-sort-items .sort-link {
@@ -382,10 +521,14 @@ fieldset {
 }
 
 .search-count {
-    font-size: 21px;
+    font-size: 19px;
     font-weight: bold;
     line-height: 1.238;
     color: #000000;
+}
+
+.sort-list li:nth-child(2) span {
+    margin-left: 10px;
 }
 
 .sort-item a:hover {
@@ -410,11 +553,15 @@ fieldset {
     justify-content: space-between;
     width: 50%;
     max-width: 520px;
-    margin-right: 0;
-
+    margin: 0;
+    /* margin-right: 0; */
+    margin-top: 14px;
+    margin-left: 32px;
 }
 
 .search-sort-items {
+    margin-bottom: 16px;
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -432,7 +579,7 @@ fieldset {
     height: 16px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 0;
+    margin-top: -5px;
 }
 
 .about-hotel {
@@ -467,14 +614,13 @@ fieldset {
 .hotel-rating {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     height: 0;
     position: relative;
-    bottom: 95px;
+    bottom: 90px;
     align-items: flex-end;
     margin-bottom: 30px;
-    width: 110px;
-    left: 300px;
+    width: 111px;
+    left: 290px;
 }
 
 .rating-count {
@@ -508,8 +654,7 @@ fieldset {
 }
 
 .hotel-img {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 32px;
     margin-top: 30px;
 }
 
@@ -520,6 +665,8 @@ fieldset {
 
 .hotel-info {
     display: flex;
+    position: relative;
+    top: -5px;
 }
 
 .hotel-type {
@@ -533,14 +680,13 @@ fieldset {
 .hotel-link {
     display: inherit;
     justify-content: center;
-    padding: 2px 7px 2px 7px;
+    padding: 2px 17px 2px 17px;
     height: 23px;
-
 }
 
 .button-set-hotel {
     display: flex;
-
+    margin-top: 4px;
 }
 
 .arrow {
@@ -552,31 +698,31 @@ fieldset {
 }
 
 .filter-range {
-    width: 330px;
-    margin: 50px auto; /* для демо */
-
-    color: #ffffff;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    margin-top: 25px;
+    margin-right: 72px;
 }
 
 .filter-range-title {
-    margin-bottom: 9px;
-
-    font-weight: 600;
+    margin-top: 2px;
     font-size: 16px;
     line-height: 21px;
+    padding-bottom: 8px;
+    padding-left: 2px;
+    width: 181px;
 }
 
 .price-controls {
     position: relative;
-
-    height: 36px;
-    margin-bottom: 20px;
-
+    height: 32px;
+    margin-bottom: 17px;
     font-size: 0;
-
     border: 2px solid #ffffff;
     border-radius: 2px;
+    width: 315px;
+    margin-top: 4px;
 }
 
 .price-controls::after {
@@ -604,9 +750,15 @@ fieldset {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
-    padding-left: 65px;
+    width: 88px;
+    padding-left: 46px;
+    margin-top: -5px;
+    margin-right: 12px;
 }
+
+/*.price-controls .min-price {*/
+    /*margin-left: 0;*/
+/*}*/
 
 .price-controls input {
     width: 50px;
@@ -710,7 +862,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin-right: 70px;
+    margin-right: 73px;
 }
 
 .sort-arrow {
@@ -729,17 +881,30 @@ input[type="radio"].visually-hidden {
 .star-raiting-item {
     display: inline-block;
     content: "";
-    background-image: url("../img/star.svg");
+    background-image: url(../img/star.svg);
     background-repeat: no-repeat;
-    width: 18px;
+    width: 21px;
     height: 17px;
     margin: 0;
 }
 
+.searched-hotel:nth-child(2) .hotel-price.item{
+    margin-left: 24px;
+    margin-top: -2px;
+}
+
+.searched-hotel:nth-child(3) .hotel-price.item{
+    margin-left: -18px;
+    margin-top: -2px;
+}
+
+
+
 .star-raiting {
-    margin-bottom: 100px;
+    margin-bottom: 99px;
     position: relative;
     top: 30px;
+    right: -5px;
 }
 
 .hotel-items {
@@ -764,19 +929,32 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
     min-width: 200px;
-    margin-left: 7px;
-    margin-bottom: 20px;
+    margin-left: 32px;
+    margin-bottom: 19px;
 }
 
-.footer-copyright svg {
+.footer-copyright-catalog {
+    min-width: 200px;
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+
+.footer-svg-logo {
     width: 115px;
     height: 41px;
 }
 
 .footer-copyright b {
     position: relative;
-    bottom: 15px;
+    bottom: 16px;
     right: 4px;
+    margin-left: -25px;
+}
+.footer-copyright-catalog b {
+    position: relative;
+    bottom: 16px;
+    right: 4px;
+    margin-left: -25px;
 }
 
 .check-in-date {
@@ -899,5 +1077,5 @@ input[type="radio"].visually-hidden {
 }
 
 .main-container {
-    margin-bottom: -16px;
+    margin-bottom: -14px;
 }
