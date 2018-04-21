@@ -47,7 +47,7 @@ a {
 
 .features-item {
     width: 400px;
-    margin-top: 60px;
+    margin-top: 54px;
     margin-bottom: 60px;
 }
 
@@ -60,25 +60,53 @@ a {
 }
 
 .reason-title {
-    margin-top: 42px;
-    /* padding-top: 28px; */
-    margin-bottom: 0;
+    font-size: 21px;
+    line-height: 1;
+    margin-bottom: 9px;
+    margin-top: 45px;
 }
 
 .reason-number-long {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .features-reason-title {
-    font-size: 18px;
+    font-size: 21px;
 }
 
-.reason-title {
-    font-size: 18px;
+.features-first-list li:nth-child(1),
+.features-first-list li:nth-child(2) {
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+
+.features-first-list li:nth-child(1) > h3 {
+    margin-top: 21px;
+}
+
+.features-first-list li:nth-child(2) > h3 {
+    margin-top: 23px;
+}
+
+.features-first-list li:nth-child(1) > p {
+    line-height: normal;
+    padding-top: 3px;
+}
+
+.features-first-list li:nth-child(2) > p {
+    margin-top: 4px;
+    padding-top: 2px;
+    line-height: normal;
+}
+
+.features-first-list li:nth-child(3) > p {
+    margin-top: -5px;
+    margin-bottom: 5px;
 }
 
 .features-reason-title.second {
-    margin: 15px;
+    line-height: 1;
+    margin-top: 25px;
 }
 
 .reason-number.second {
@@ -235,6 +263,10 @@ a {
 .checkbox:checked + .custom-checkbox {
     background: url(../img/checkbox-on.svg) no-repeat;
 }
+
+/*.checkbox:checked:disabled + .custom-checkbox {*/
+/*background: url(../img/checkbox-on-disabled.svg) no-repeat;*/
+/*}*/
 
 .living-type-list {
     padding-left: 33px;
@@ -917,14 +949,14 @@ input[type="radio"].visually-hidden {
     height: 41px;
 }
 
-.footer-copyright b {
+.footer-copyright span {
     position: relative;
     bottom: 16px;
     right: 4px;
     margin-left: -25px;
 }
 
-.footer-copyright-catalog b {
+.footer-copyright-catalog span {
     position: relative;
     bottom: 16px;
     right: 4px;
@@ -1062,12 +1094,21 @@ input[type="radio"].visually-hidden {
 
 .search-button:hover,
 .search-button:focus {
-    background-color: #604e44;
+    color: #604e44;
 }
 
 .icon-calendar:hover,
 .icon-calendar:focus {
     fill: #000000;
+}
+
+.icon-calendar:active {
+    fill: #669ec0;
+}
+
+.btn-left:active::before,
+.btn-right:active::before, .btn-right:active::after {
+    background-color: #669ec0;
 }
 
 .modal-search input:hover {
@@ -1091,11 +1132,27 @@ input[type="radio"].visually-hidden {
     background-color: #669ec0;
 }
 
+.social-button:active,
+.social-button-catalog:active {
+    background-color: #5496bd;
+}
+
+.social-button:active path,
+.social-button-catalog:active path {
+    fill: #88b6d1;
+}
+
 .footer-copyright:hover path,
 .footer-copyright:focus path,
 .footer-copyright-catalog:hover path,
 .footer-copyright-catalog:focus path {
     fill: #98c1da;
+}
+
+.footer-copyright:active path,
+.footer-copyright-catalog:active path {
+    fill: #bdbbbc;
+
 }
 
 .range-toggle:hover {
@@ -1119,9 +1176,17 @@ input[type="radio"].visually-hidden {
     fill: #231f20;
 }
 
-.sort-element svg,
-.sort-right svg:active {
+.sort-element svg {
+    fill: #cacaca;
+}
+
+.sort-right svg,
+.sort-element svg:active {
     fill: #81b3d2;
+}
+
+.hotel-title:active {
+    color: #b2b2b2;
 }
 
 .hotel-title:hover,
@@ -1131,4 +1196,12 @@ input[type="radio"].visually-hidden {
 
 .active-catalog {
     color: #766357;
+}
+
+.modal-search input:focus {
+    background-color: #ffffff
+}
+
+.site-navigation a:active {
+    color: #b2b2b2;
 }
