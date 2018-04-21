@@ -18,19 +18,17 @@ img {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 10px 10px 10px #ededed;
     position: relative;
-}
-
-a,
-.site-navigation a:hover,
-.site-navigation a:focus {
-    text-decoration: none;
-    color: #81b3d2;
 }
 
 .site-navigation:nth-child(1) {
@@ -394,8 +392,6 @@ a,
     width: 568px;
     padding-top: 32px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #ffffff;
 }
@@ -571,6 +567,7 @@ fieldset {
     display: flex;
     justify-content: flex-start;
     margin-top: -5px;
+    cursor: pointer;
 }
 
 .about-hotel {
@@ -856,15 +853,6 @@ input[type="radio"].visually-hidden {
     border-bottom: none;
 }
 
-.sort-element svg:hover {
-    color: #436dca;
-}
-
-.sort-element svg, .sort-right svg:active {
-    fill: #81b3d2;
-
-}
-
 .star-raiting-item {
     display: inline-block;
     content: "";
@@ -952,7 +940,7 @@ input[type="radio"].visually-hidden {
 .icon-calendar {
     position: relative;
     right: 35px;
-
+    cursor: pointer;
     top: 7px;
     fill: #cacaca;
 }
@@ -1064,4 +1052,83 @@ input[type="radio"].visually-hidden {
 
 .main-container {
     margin-bottom: -14px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    text-decoration: none;
+    color: #81b3d2;
+}
+
+.search-button:hover,
+.search-button:focus {
+    background-color: #604e44;
+}
+
+.icon-calendar:hover,
+.icon-calendar:focus {
+    fill: #000000;
+}
+
+.modal-search input:hover {
+    background-color: #ebebeb;
+}
+
+.btn-left:hover::before, .btn-left:focus::before,
+.btn-right:hover::before, .btn-right:focus::before,
+.btn-right:hover::after, .btn-right:focus::after {
+    background-color: #000000;
+}
+
+.modal-search.button:hover, .modal-search.button:focus {
+    background-color: #669ec0;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button-catalog:hover,
+.social-button-catalog:focus {
+    background-color: #669ec0;
+}
+
+.footer-copyright:hover path,
+.footer-copyright:focus path,
+.footer-copyright-catalog:hover path,
+.footer-copyright-catalog:focus path {
+    fill: #98c1da;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+    width: 5px;
+    height: 5px;
+    border: 9px solid #ffffff;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+.sort-left svg:hover, .sort-left svg:focus {
+    color: #231f20;
+}
+
+.sort-right svg:hover, .sort-right svg:focus,
+.sort-left svg:hover, .sort-left svg:focus {
+    fill: #231f20;
+}
+
+.sort-element svg,
+.sort-right svg:active {
+    fill: #81b3d2;
+}
+
+.hotel-title:hover,
+.hotel-title:focus {
+    color: #81b3d2;
+}
+
+.active-catalog {
+    color: #766357;
 }
