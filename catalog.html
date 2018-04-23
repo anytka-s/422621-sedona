@@ -27,82 +27,83 @@
 <main class="container main-container">
     <h1 class="visually-hidden">Отели в Седоне</h1>
 
-    <section class="catalog-filter">
-        <h2 class="visually-hidden">Условия проживания в отеле</h2>
-
-        <fieldset class="living-conditions">
-            <legend class="fieldset-legend">Инфаструктура:</legend>
-            <ul class="living-conditions-list">
-                <li class="filter-point">
-                    <label for="pool-checkbox" class="living-conditions-name">
-                        <input id="pool-checkbox" type="checkbox" class="visually-hidden checkbox checkbox" checked>
-                        <span class="custom-checkbox"></span>
-                        <span class="filter-name">Бассейн</span>
-                    </label>
-                </li>
-                <li class="filter-point">
-                    <label for="parking-checkbox" class="living-conditions-name">
-                        <input id="parking-checkbox" type="checkbox" class="visually-hidden checkbox">
-                        <span class="custom-checkbox"></span>
-                        <span class="filter-name">Парковка</span>
-                    </label>
-                </li>
-                <li class="filter-point">
-                    <label for="wifi-checkbox" class="living-conditions-name">
-                        <input id="wifi-checkbox" type="checkbox" class="visually-hidden checkbox" checked disabled>
-                        <span class="custom-checkbox"></span>
-                        <span class="filter-name">WI-FI</span>
-                    </label>
-                </li>
-            </ul>
-        </fieldset>
-        <fieldset class="living-type">
-            <legend class="fieldset-legend">Тип жилья:</legend>
-            <ul class="living-type-list">
-                <li class="filter-point">
-                    <label for="hotel-checkbox" class="living-conditions-name">
-                        <input id="hotel-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
-                        <span class="custom-checkbox"></span>
-                        <span class="filter-name">Гостиница</span>
-                    </label>
-                </li>
-                <li class="filter-point">
-                    <label for="motel-checkbox" class="living-conditions-name">
-                        <input id="motel-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
-                        <span class="custom-checkbox"></span>
-                        <span class="filter-name">Мотель</span>
-                    </label>
-                </li>
-                <li class="filter-point">
-                    <label for="appart-checkbox" class="living-conditions-name">
-                        <input id="appart-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
-                        <span class="custom-checkbox"></span>
-                        <span class="filter-name">Апартаменты</span>
-                    </label>
-                </li>
-            </ul>
-        </fieldset>
-        <div class="filter-range">
-            <div class="filter-range-title">Стоимость в сутки (р):</div>
-            <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-            </div>
-            <div class="range-controls">
-                <div class="scale">
-                    <div class="bar"></div>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <section class="catalog-filter">
+            <h2 class="visually-hidden">Условия проживания в отеле</h2>
+            <fieldset class="living-conditions">
+                <legend class="fieldset-legend">Инфраструктура:</legend>
+                <ul class="living-conditions-list">
+                    <li class="filter-point">
+                        <label for="pool-checkbox" class="living-conditions-name">
+                            <input id="pool-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
+                            <span class="custom-checkbox"></span>
+                            <span class="filter-name">Бассейн</span>
+                        </label>
+                    </li>
+                    <li class="filter-point">
+                        <label for="parking-checkbox" class="living-conditions-name">
+                            <input id="parking-checkbox" type="checkbox" class="visually-hidden checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span class="filter-name">Парковка</span>
+                        </label>
+                    </li>
+                    <li class="filter-point">
+                        <label for="wifi-checkbox" class="living-conditions-name">
+                            <input id="wifi-checkbox" type="checkbox" class="visually-hidden checkbox" checked disabled>
+                            <span class="custom-checkbox"></span>
+                            <span class="filter-name">WI-FI</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="living-type">
+                <legend class="fieldset-legend">Тип жилья:</legend>
+                <ul class="living-type-list">
+                    <li class="filter-point">
+                        <label for="hotel-checkbox" class="living-conditions-name">
+                            <input id="hotel-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
+                            <span class="custom-checkbox"></span>
+                            <span class="filter-name">Гостиница</span>
+                        </label>
+                    </li>
+                    <li class="filter-point">
+                        <label for="motel-checkbox" class="living-conditions-name">
+                            <input id="motel-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
+                            <span class="custom-checkbox"></span>
+                            <span class="filter-name">Мотель</span>
+                        </label>
+                    </li>
+                    <li class="filter-point">
+                        <label for="appart-checkbox" class="living-conditions-name">
+                            <input id="appart-checkbox" type="checkbox" class="visually-hidden checkbox" checked>
+                            <span class="custom-checkbox"></span>
+                            <span class="filter-name">Апартаменты</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <button class="btn-transparent" type="submit">Показать</button>
-        </div>
 
-    </section>
+        </section>
+    </form>
 
     <section class="search-sort-items">
         <ul class="sort-list">
-            <li><span class="search-count">Найденно: 3</span></li>
+            <li><h3 class="search-count">Найдено: 3</h3></li>
             <li><span>Сортировка:</span></li>
             <li class="sort-item"><a class="sort-link" href="#">По цене</a></li>
             <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>

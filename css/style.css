@@ -235,9 +235,17 @@ a {
     list-style: none;
 }
 
-.living-conditions,
+.living-conditions {
+    margin-top: 27px;
+}
+
 .living-type {
     margin-top: 30px;
+}
+
+.living-conditions .fieldset-legend {
+    padding-right: 7px;
+    margin-bottom: 11px;
 }
 
 .living-conditions {
@@ -248,28 +256,35 @@ a {
     padding-left: 73px;
 }
 
+.living-conditions .filter-name {
+    padding-right: 10px;
+}
+
 .checkbox + .custom-checkbox {
     content: "";
     display: inline-block;
-    width: 40px;
+    width: 27px;
     height: 27px;
-    margin: 0;
     vertical-align: middle;
     background: url(../img/checkbox-off.svg) no-repeat;
-    position: relative;
-    left: 0;
+    margin-left: 5px;
+    padding-right: 5px;
 }
 
 .checkbox:checked + .custom-checkbox {
     background: url(../img/checkbox-on.svg) no-repeat;
 }
 
-/*.checkbox:checked:disabled + .custom-checkbox {*/
-/*background: url(../img/checkbox-on-disabled.svg) no-repeat;*/
-/*}*/
+.checkbox:checked:disabled + .custom-checkbox {
+    background: url(../img/checkbox-off-disabled.svg) no-repeat;
+}
+
+.checkbox:checked:disabled + span + span, .checkbox:disabled + span + span {
+    color: #6a6a6a;
+}
 
 .living-type-list {
-    padding-left: 33px;
+    padding-left: 9px;
 }
 
 .living-type-list li:first-child > label {
@@ -283,9 +298,8 @@ a {
 }
 
 .living-conditions-list {
-    position: relative;
-    bottom: 15px;
-    right: 43px;
+    padding-left: 0;
+    margin-left: -24px;
 }
 
 .living-type {
@@ -311,11 +325,15 @@ a {
 
 .filter-point {
     margin-bottom: 18px;
-    width: 140px;
+    width: 180px;
 }
 
 .filter-name {
     width: 100px;
+}
+
+.living-type-list .filter-name {
+    margin-left: 3px;
 }
 
 .living-type {
@@ -540,10 +558,14 @@ fieldset {
 }
 
 .search-count {
-    font-size: 19px;
+    font-size: 21px;
     font-weight: bold;
     line-height: 1.238;
     color: #000000;
+    margin-top: -2px;
+    margin-bottom: 0;
+    margin-left: -2px;
+    margin-right: 2px;
 }
 
 .sort-list li:nth-child(2) span {
@@ -573,9 +595,8 @@ fieldset {
     width: 50%;
     max-width: 520px;
     margin: 0;
-    /* margin-right: 0; */
-    margin-top: 14px;
-    margin-left: 32px;
+    margin-top: 16px;
+    margin-left: 33px;
 }
 
 .search-sort-items {
@@ -730,8 +751,9 @@ fieldset {
     font-size: 16px;
     line-height: 21px;
     padding-bottom: 8px;
-    padding-left: 2px;
-    width: 181px;
+    padding-left: 0;
+    width: 245px;
+    margin-left: -29px;
 }
 
 .price-controls {
@@ -795,7 +817,7 @@ fieldset {
 
 .range-controls .scale {
     height: 2px;
-
+    margin-right: -8px;
     background: #ffffff;
 }
 
@@ -825,11 +847,11 @@ fieldset {
 }
 
 .range-toggle-min {
-    left: 0;
+    left: 2px;
 }
 
 .range-toggle-max {
-    left: 80%;
+    left: 254px;
 }
 
 .btn-transparent {
@@ -1094,7 +1116,12 @@ input[type="radio"].visually-hidden {
 
 .search-button:hover,
 .search-button:focus {
-    color: #604e44;
+    background-color: #604e44;
+}
+
+.search-button:active {
+    background-color: #503e34;
+    color: #857871;
 }
 
 .icon-calendar:hover,
