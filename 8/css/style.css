@@ -279,6 +279,10 @@ a {
     background: url(../img/checkbox-off-disabled.svg) no-repeat;
 }
 
+.checkbox:disabled + .custom-checkbox {
+    background: url(../img/checkbox-off2.svg) no-repeat;
+}
+
 .checkbox:checked:disabled + span + span, .checkbox:disabled + span + span {
     color: #6a6a6a;
 }
@@ -1133,6 +1137,12 @@ input[type="radio"].visually-hidden {
     fill: #669ec0;
 }
 
+.btn-left:hover::before, .btn-left:focus::before,
+.btn-right:hover::before, .btn-right:focus::before,
+.btn-right:hover::after, .btn-right:focus::after {
+    background-color: #000000;
+}
+
 .btn-left:active::before,
 .btn-right:active::before, .btn-right:active::after {
     background-color: #669ec0;
@@ -1142,10 +1152,9 @@ input[type="radio"].visually-hidden {
     background-color: #ebebeb;
 }
 
-.btn-left:hover::before, .btn-left:focus::before,
-.btn-right:hover::before, .btn-right:focus::before,
-.btn-right:hover::after, .btn-right:focus::after {
-    background-color: #000000;
+.modal-search.button:active {
+    background-color: #5496bd;
+    color: #88b6d1;
 }
 
 .modal-search.button:hover, .modal-search.button:focus {
