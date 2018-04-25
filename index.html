@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/ccsminify.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона</title>
 </head>
 
@@ -232,33 +232,7 @@
         </div>
     </footer>
 </div>
-
-<script>
-    var form = document.querySelector(".modal-search-form");
-    var button = document.querySelector(".search-button");
-    var arrivalDate = document.querySelector("[name=check-in-date]");
-    var departureDate = document.querySelector("[name=check-out-date]");
-    var adults = document.querySelector("[name=adults]");
-    var kids = document.querySelector("[name=kids]");
-    //    var popup = document.querySelector(".modal-search");
-
-
-    form.classList.add("modal-hide");
-
-    button.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        form.classList.add("modal-hide");
-        arrivalDate.focus();
-        form.classList.toggle("active");
-        form.classList.remove("error");
-    });
-
-    form.addEventListener("submit", function (evt) {
-        evt.preventDefault();
-        if (!arrivalDate.value || !departureDate.value || !adults.value || !kids.value) {
-            form.classList.add("error");
-        }
-    });
+<script src="js/scriptminify.js">
 </script>
 
 </body>

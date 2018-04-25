@@ -953,6 +953,7 @@ fieldset {
 
 .city-map {
     position: relative;
+    min-height: 593px;
 }
 
 .city-map img {
