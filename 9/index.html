@@ -120,7 +120,7 @@
                     <p class="first-column column">
                         <label for="check-in-date">Дата заезда:</label>
                         <input class="check-in-date" id="check-in-date" type="text" name="check-in-date"
-                               value="24 апреля 2017" required>
+                               value="24 апреля 2017">
                         <a class="icon-calendar">
                             <span class="visually-hidden">Выбор даты заезда в календаре</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -132,7 +132,7 @@
                     <p class="second-column column">
                         <label for="check-out-date">Дата выезда:</label>
                         <input class="check-in-date" id="check-out-date" type="text" name="check-out-date"
-                               value="24 июля 2017" required>
+                               value="24 июля 2017">
                         <a class="icon-calendar">
                             <span class="visually-hidden">Выбор даты заезда в календаре</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -147,7 +147,7 @@
                             <button class="change-count-btn btn-left " type="button" name="search-form-people remove">
                                 <span class="visually-hidden">Минус</span>
                             </button>
-                            <input id="adults" type="number" name="adults" value="2" required>
+                            <input id="adults" type="number" name="adults" value="2">
                             <button class="change-count-btn btn-right" type="button" name="search-form-people add">
                                 <span class="visually-hidden">Плюс</span>
                             </button>
@@ -157,7 +157,7 @@
                             <button class="change-count-btn btn-left" type="button" name="search-form-people remove">
                                 <span class="visually-hidden">Минус</span>
                             </button>
-                            <input id="kids" type="number" name="kids" value="0" required>
+                            <input id="kids" type="number" name="kids" value="0">
                             <button class="change-count-btn btn-right" type="button" name="search-form-people add">
                                 <span class="visually-hidden">Плюс</span>
                             </button>
@@ -169,6 +169,9 @@
 
             <div class="city-map">
                 <img src="img/background/map.png" width="1200" height="593" alt="Карта">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6547.371588457901!2d-111.76890870677494!3d34.864121559927035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1524575469331"
+                        width="1200" height="593" allowfullscreen></iframe>
+
             </div>
         </div>
     </main>
@@ -230,5 +233,35 @@
         </div>
     </footer>
 </div>
+
+<script>
+    var form = document = document.querySelector("form.modal-search.form");
+    var button = document.querySelector(".search-button");
+    var arrivalDate = document.querySelector("[name=check-in-date]");
+    var departureDate = document.querySelector("[name=check-out-date]");
+    var adults = document.querySelector("[name=adults]");
+    var kids = document.querySelector("[name=kids]");
+    var popup = document = document.querySelector(".modal-search");
+
+
+    form.classList.add("modal-hide");
+
+    button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        form.classList.add("modal-hide");
+        arrivalDate.focus();
+        form.classList.toggle("active");
+        popup.classList.remove("error");
+    });
+
+    form.addEventListener("submit", function(evt) {
+        evt.preventDefault();
+        if (!arrivalDate.value || !departureDate.value || !adults.value || !kids.value) {
+            popup.classList.add("error");
+
+        }
+    });
+</script>
+
 </body>
 </html>
