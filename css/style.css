@@ -1415,13 +1415,12 @@ input[type="radio"].visually-hidden {
     color: #b2b2b2;
 }
 
-.modal-hide.form {
+.modal-hide {
     display: none;
 }
 
-.active.form {
+.active {
     display: block;
-
     animation: show .7s;
 }
 

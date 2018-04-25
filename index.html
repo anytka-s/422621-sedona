@@ -115,7 +115,7 @@
                 гостиниц в Седоне</p>
             <section class="modal modal-search">
                 <button class="search-button">Поиск гостиницы в Седоне</button>
-                <form class="modal-search form" action="https://echo.htmlacademy.ru" method="get">
+                <form class="modal-search form modal-search-form" action="https://echo.htmlacademy.ru" method="get">
                     <p class="first-column column">
                         <label for="check-in-date">Дата заезда:</label>
                         <input class="check-in-date" id="check-in-date" type="text" name="check-in-date"
@@ -234,13 +234,13 @@
 </div>
 
 <script>
-    var form = document = document.querySelector("form.modal-search.form");
+    var form = document.querySelector(".modal-search-form");
     var button = document.querySelector(".search-button");
     var arrivalDate = document.querySelector("[name=check-in-date]");
     var departureDate = document.querySelector("[name=check-out-date]");
     var adults = document.querySelector("[name=adults]");
     var kids = document.querySelector("[name=kids]");
-    var popup = document = document.querySelector(".modal-search");
+    //    var popup = document.querySelector(".modal-search");
 
 
     form.classList.add("modal-hide");
@@ -250,14 +250,13 @@
         form.classList.add("modal-hide");
         arrivalDate.focus();
         form.classList.toggle("active");
-        popup.classList.remove("error");
+        form.classList.remove("error");
     });
 
-    form.addEventListener("submit", function(evt) {
+    form.addEventListener("submit", function (evt) {
         evt.preventDefault();
         if (!arrivalDate.value || !departureDate.value || !adults.value || !kids.value) {
-            popup.classList.add("error");
-
+            form.classList.add("error");
         }
     });
 </script>
